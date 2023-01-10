@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
 
 	for(int i = 0; i < 100; i++)
 	{
-		sprintf(save, "data/%d.txt", i);
+		sprintf(save, "%s%d.txt", data_dir.c_str(), i);
 		fi.open(save, ios::in);
 
 		// GET TITLENAME
